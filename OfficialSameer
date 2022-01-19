@@ -4,12 +4,12 @@
 _repolink () {
     local regex
     regex='(https?)://github.com/.+/.+'
-    if [[ $SPAM_REPO == "Spambot" ]]
+    if [[ $SPAM_REPO == "DEADLY-SPAM-BOT-2.0" ]]
     then
-        echo "aHR0cHM6Ly9naXRodWIuY29tL0RlYWRseS1GaWdodGVycy9EZWFkbHktU3BhbS1Cb3QtMi4wL2FyY2hpdmUvRGVhZGx5LnppcA==" | base64 -d
-    elif [[ $SPAM_REPO == "Spambot" ]]
+        echo "aHR0cHM6Ly9naXRodWIuY29tL0RlYWRseS1GaWdodGVycy9EZWFkbHktU3BhbS1Cb3QtMi4wL2FyY2hpdmUvT2ZmaWNpYWxTYW1lZXIuemlw" | base64 -d
+    elif [[ $SPAM_REPO == "DEADLY-SPAM-BOT-2.0" ]]
     then
-        echo "aHR0cHM6Ly9naXRodWIuY29tL0RlYWRseS1GaWdodGVycy9EZWFkbHktU3BhbS1Cb3QtMi4wL2FyY2hpdmUvRGVhZGx5LnppcA==" | base64 -d
+        echo "aHR0cHM6Ly9naXRodWIuY29tL0RlYWRseS1GaWdodGVycy9EZWFkbHktU3BhbS1Cb3QtMi4wL2FyY2hpdmUvT2ZmaWNpYWxTYW1lZXIuemlw" | base64 -d
     elif [[ $SPAM_REPO =~ $regex ]]
     then
         if [[ $SPAM_REPO_BRANCH ]]
@@ -19,7 +19,7 @@ _repolink () {
             echo "${SPAM_REPO}/archive/OfficialSameer.zip"
         fi
     else
-        echo "aHR0cHM6Ly9naXRodWIuY29tL0RlYWRseS1GaWdodGVycy9EZWFkbHktU3BhbS1Cb3QtMi4wL2FyY2hpdmUvRGVhZGx5LnppcA==" | base64 -d
+        echo "aHR0cHM6Ly9naXRodWIuY29tL0RlYWRseS1GaWdodGVycy9EZWFkbHktU3BhbS1Cb3QtMi4wL2FyY2hpdmUvT2ZmaWNpYWxTYW1lZXIuemlw" | base64 -d
     fi
 }
 
